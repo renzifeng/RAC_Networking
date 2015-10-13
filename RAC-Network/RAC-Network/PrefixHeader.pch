@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  RAC-Network
+//
+//  Created by 任子丰 on 15/10/13.
+//  Copyright © 2015年 任子丰. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AFNetworking.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "HttpManager.h"
+#import "MJExtension.h"
+
+#define BASE_URL      @"https://api.douban.com/"
+#define OPT_POST @"post"
+#define OPT_GET @"get"
+
+#endif /* PrefixHeader_pch */

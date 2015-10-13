@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		348077A5E169A79B26CB201A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5D5AC72DCBB17AE4AC8747 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CC60C6AE1BC9178E00F26FAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC60C6AD1BC9178E00F26FAB /* main.m */; };
+		CC60C6B11BC9178E00F26FAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC60C6B01BC9178E00F26FAB /* AppDelegate.m */; };
+		CC60C6B41BC9178E00F26FAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC60C6B31BC9178E00F26FAB /* ViewController.m */; };
+		CC60C6B71BC9178E00F26FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC60C6B51BC9178E00F26FAB /* Main.storyboard */; };
+		CC60C6BC1BC9178E00F26FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC60C6BB1BC9178E00F26FAB /* Assets.xcassets */; };
+		CC60C6BF1BC9178E00F26FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC60C6BD1BC9178E00F26FAB /* LaunchScreen.storyboard */; };
+		CC60C6CA1BC9178E00F26FAB /* RAC_NetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC60C6C91BC9178E00F26FAB /* RAC_NetworkTests.m */; };
+		CC60C6D51BC9178E00F26FAB /* RAC_NetworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC60C6D41BC9178E00F26FAB /* RAC_NetworkUITests.m */; };
+		CCFF45641BCCD0AC00716671 /* RequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF45631BCCD0AC00716671 /* RequestViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		CCFF45671BCCD25000716671 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF45661BCCD25000716671 /* Book.m */; settings = {ASSET_TAGS = (); }; };
+		CCFF456A1BCCD7F200716671 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF45691BCCD7F200716671 /* HttpManager.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC60C6C61BC9178E00F26FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC60C6A11BC9178E00F26FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC60C6A81BC9178E00F26FAB;
+			remoteInfo = "RAC-Network";
+		};
+		CC60C6D11BC9178E00F26FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC60C6A11BC9178E00F26FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC60C6A81BC9178E00F26FAB;
+			remoteInfo = "RAC-Network";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FCBD96192CF5306DF92A422 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BAB2FE9ED2D2234EEBDD8049 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CC60C6A91BC9178E00F26FAB /* RAC-Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAC-Network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC60C6AD1BC9178E00F26FAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC60C6AF1BC9178E00F26FAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC60C6B01BC9178E00F26FAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC60C6B21BC9178E00F26FAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC60C6B31BC9178E00F26FAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC60C6B61BC9178E00F26FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC60C6BB1BC9178E00F26FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC60C6BE1BC9178E00F26FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC60C6C01BC9178E00F26FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC60C6C51BC9178E00F26FAB /* RAC-NetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RAC-NetworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC60C6C91BC9178E00F26FAB /* RAC_NetworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAC_NetworkTests.m; sourceTree = "<group>"; };
+		CC60C6CB1BC9178E00F26FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC60C6D01BC9178E00F26FAB /* RAC-NetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RAC-NetworkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC60C6D41BC9178E00F26FAB /* RAC_NetworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAC_NetworkUITests.m; sourceTree = "<group>"; };
+		CC60C6D61BC9178E00F26FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCFF45621BCCD0AC00716671 /* RequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewModel.h; sourceTree = "<group>"; };
+		CCFF45631BCCD0AC00716671 /* RequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewModel.m; sourceTree = "<group>"; };
+		CCFF45651BCCD25000716671 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		CCFF45661BCCD25000716671 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		CCFF45681BCCD7F200716671 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		CCFF45691BCCD7F200716671 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		CCFF456B1BCCD84600716671 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		CCFF456C1BCCDACC00716671 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DE5D5AC72DCBB17AE4AC8747 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC60C6A61BC9178E00F26FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				348077A5E169A79B26CB201A /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC60C6C21BC9178E00F26FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC60C6CD1BC9178E00F26FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81D76B7ABDBFAFE8521D764D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAB2FE9ED2D2234EEBDD8049 /* Pods.debug.xcconfig */,
+				3FCBD96192CF5306DF92A422 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9569A53FD7D82FF33C093BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE5D5AC72DCBB17AE4AC8747 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC60C6A01BC9178E00F26FAB = {
+			isa = PBXGroup;
+			children = (
+				CC60C6AB1BC9178E00F26FAB /* RAC-Network */,
+				CC60C6C81BC9178E00F26FAB /* RAC-NetworkTests */,
+				CC60C6D31BC9178E00F26FAB /* RAC-NetworkUITests */,
+				CC60C6AA1BC9178E00F26FAB /* Products */,
+				81D76B7ABDBFAFE8521D764D /* Pods */,
+				A9569A53FD7D82FF33C093BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC60C6AA1BC9178E00F26FAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC60C6A91BC9178E00F26FAB /* RAC-Network.app */,
+				CC60C6C51BC9178E00F26FAB /* RAC-NetworkTests.xctest */,
+				CC60C6D01BC9178E00F26FAB /* RAC-NetworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC60C6AB1BC9178E00F26FAB /* RAC-Network */ = {
+			isa = PBXGroup;
+			children = (
+				CC60C6AF1BC9178E00F26FAB /* AppDelegate.h */,
+				CC60C6B01BC9178E00F26FAB /* AppDelegate.m */,
+				CCFF456D1BCCDF0C00716671 /* Controller */,
+				CCFF456E1BCCDF2600716671 /* ViewModel */,
+				CCFF456F1BCCDF3300716671 /* Model */,
+				CCFF45701BCCDF4000716671 /* Other */,
+				CC60C6B51BC9178E00F26FAB /* Main.storyboard */,
+				CC60C6BB1BC9178E00F26FAB /* Assets.xcassets */,
+				CC60C6BD1BC9178E00F26FAB /* LaunchScreen.storyboard */,
+				CC60C6C01BC9178E00F26FAB /* Info.plist */,
+				CCFF456C1BCCDACC00716671 /* PrefixHeader.pch */,
+				CC60C6AC1BC9178E00F26FAB /* Supporting Files */,
+			);
+			path = "RAC-Network";
+			sourceTree = "<group>";
+		};
+		CC60C6AC1BC9178E00F26FAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC60C6AD1BC9178E00F26FAB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC60C6C81BC9178E00F26FAB /* RAC-NetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC60C6C91BC9178E00F26FAB /* RAC_NetworkTests.m */,
+				CC60C6CB1BC9178E00F26FAB /* Info.plist */,
+			);
+			path = "RAC-NetworkTests";
+			sourceTree = "<group>";
+		};
+		CC60C6D31BC9178E00F26FAB /* RAC-NetworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC60C6D41BC9178E00F26FAB /* RAC_NetworkUITests.m */,
+				CC60C6D61BC9178E00F26FAB /* Info.plist */,
+			);
+			path = "RAC-NetworkUITests";
+			sourceTree = "<group>";
+		};
+		CCFF456D1BCCDF0C00716671 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC60C6B21BC9178E00F26FAB /* ViewController.h */,
+				CC60C6B31BC9178E00F26FAB /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CCFF456E1BCCDF2600716671 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCFF45621BCCD0AC00716671 /* RequestViewModel.h */,
+				CCFF45631BCCD0AC00716671 /* RequestViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CCFF456F1BCCDF3300716671 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCFF45651BCCD25000716671 /* Book.h */,
+				CCFF45661BCCD25000716671 /* Book.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCFF45701BCCDF4000716671 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CCFF45681BCCD7F200716671 /* HttpManager.h */,
+				CCFF45691BCCD7F200716671 /* HttpManager.m */,
+				CCFF456B1BCCD84600716671 /* Singleton.h */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC60C6A81BC9178E00F26FAB /* RAC-Network */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC60C6D91BC9178E00F26FAB /* Build configuration list for PBXNativeTarget "RAC-Network" */;
+			buildPhases = (
+				813628EED945CF8DEBAE32DA /* Check Pods Manifest.lock */,
+				CC60C6A51BC9178E00F26FAB /* Sources */,
+				CC60C6A61BC9178E00F26FAB /* Frameworks */,
+				CC60C6A71BC9178E00F26FAB /* Resources */,
+				E7F99D3B72A9293FE504D6DC /* Embed Pods Frameworks */,
+				66619C22A087382CEBDCE667 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RAC-Network";
+			productName = "RAC-Network";
+			productReference = CC60C6A91BC9178E00F26FAB /* RAC-Network.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC60C6C41BC9178E00F26FAB /* RAC-NetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC60C6DC1BC9178E00F26FAB /* Build configuration list for PBXNativeTarget "RAC-NetworkTests" */;
+			buildPhases = (
+				CC60C6C11BC9178E00F26FAB /* Sources */,
+				CC60C6C21BC9178E00F26FAB /* Frameworks */,
+				CC60C6C31BC9178E00F26FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC60C6C71BC9178E00F26FAB /* PBXTargetDependency */,
+			);
+			name = "RAC-NetworkTests";
+			productName = "RAC-NetworkTests";
+			productReference = CC60C6C51BC9178E00F26FAB /* RAC-NetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC60C6CF1BC9178E00F26FAB /* RAC-NetworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC60C6DF1BC9178E00F26FAB /* Build configuration list for PBXNativeTarget "RAC-NetworkUITests" */;
+			buildPhases = (
+				CC60C6CC1BC9178E00F26FAB /* Sources */,
+				CC60C6CD1BC9178E00F26FAB /* Frameworks */,
+				CC60C6CE1BC9178E00F26FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC60C6D21BC9178E00F26FAB /* PBXTargetDependency */,
+			);
+			name = "RAC-NetworkUITests";
+			productName = "RAC-NetworkUITests";
+			productReference = CC60C6D01BC9178E00F26FAB /* RAC-NetworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC60C6A11BC9178E00F26FAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "任子丰";
+				TargetAttributes = {
+					CC60C6A81BC9178E00F26FAB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					CC60C6C41BC9178E00F26FAB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = CC60C6A81BC9178E00F26FAB;
+					};
+					CC60C6CF1BC9178E00F26FAB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = CC60C6A81BC9178E00F26FAB;
+					};
+				};
+			};
+			buildConfigurationList = CC60C6A41BC9178E00F26FAB /* Build configuration list for PBXProject "RAC-Network" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC60C6A01BC9178E00F26FAB;
+			productRefGroup = CC60C6AA1BC9178E00F26FAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC60C6A81BC9178E00F26FAB /* RAC-Network */,
+				CC60C6C41BC9178E00F26FAB /* RAC-NetworkTests */,
+				CC60C6CF1BC9178E00F26FAB /* RAC-NetworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC60C6A71BC9178E00F26FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC60C6BF1BC9178E00F26FAB /* LaunchScreen.storyboard in Resources */,
+				CC60C6BC1BC9178E00F26FAB /* Assets.xcassets in Resources */,
+				CC60C6B71BC9178E00F26FAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC60C6C31BC9178E00F26FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC60C6CE1BC9178E00F26FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66619C22A087382CEBDCE667 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813628EED945CF8DEBAE32DA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7F99D3B72A9293FE504D6DC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC60C6A51BC9178E00F26FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC60C6B41BC9178E00F26FAB /* ViewController.m in Sources */,
+				CC60C6B11BC9178E00F26FAB /* AppDelegate.m in Sources */,
+				CC60C6AE1BC9178E00F26FAB /* main.m in Sources */,
+				CCFF456A1BCCD7F200716671 /* HttpManager.m in Sources */,
+				CCFF45671BCCD25000716671 /* Book.m in Sources */,
+				CCFF45641BCCD0AC00716671 /* RequestViewModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC60C6C11BC9178E00F26FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC60C6CA1BC9178E00F26FAB /* RAC_NetworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC60C6CC1BC9178E00F26FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC60C6D51BC9178E00F26FAB /* RAC_NetworkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC60C6C71BC9178E00F26FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC60C6A81BC9178E00F26FAB /* RAC-Network */;
+			targetProxy = CC60C6C61BC9178E00F26FAB /* PBXContainerItemProxy */;
+		};
+		CC60C6D21BC9178E00F26FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC60C6A81BC9178E00F26FAB /* RAC-Network */;
+			targetProxy = CC60C6D11BC9178E00F26FAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC60C6B51BC9178E00F26FAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC60C6B61BC9178E00F26FAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC60C6BD1BC9178E00F26FAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC60C6BE1BC9178E00F26FAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC60C6D71BC9178E00F26FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC60C6D81BC9178E00F26FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC60C6DA1BC9178E00F26FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAB2FE9ED2D2234EEBDD8049 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RAC-Network/PrefixHeader.pch";
+				INFOPLIST_FILE = "RAC-Network/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zifeng.RAC-Network";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC60C6DB1BC9178E00F26FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FCBD96192CF5306DF92A422 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RAC-Network/PrefixHeader.pch";
+				INFOPLIST_FILE = "RAC-Network/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zifeng.RAC-Network";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC60C6DD1BC9178E00F26FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RAC-NetworkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zifeng.RAC-NetworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAC-Network.app/RAC-Network";
+			};
+			name = Debug;
+		};
+		CC60C6DE1BC9178E00F26FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RAC-NetworkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zifeng.RAC-NetworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAC-Network.app/RAC-Network";
+			};
+			name = Release;
+		};
+		CC60C6E01BC9178E00F26FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RAC-NetworkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zifeng.RAC-NetworkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RAC-Network";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CC60C6E11BC9178E00F26FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RAC-NetworkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zifeng.RAC-NetworkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RAC-Network";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC60C6A41BC9178E00F26FAB /* Build configuration list for PBXProject "RAC-Network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC60C6D71BC9178E00F26FAB /* Debug */,
+				CC60C6D81BC9178E00F26FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC60C6D91BC9178E00F26FAB /* Build configuration list for PBXNativeTarget "RAC-Network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC60C6DA1BC9178E00F26FAB /* Debug */,
+				CC60C6DB1BC9178E00F26FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC60C6DC1BC9178E00F26FAB /* Build configuration list for PBXNativeTarget "RAC-NetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC60C6DD1BC9178E00F26FAB /* Debug */,
+				CC60C6DE1BC9178E00F26FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC60C6DF1BC9178E00F26FAB /* Build configuration list for PBXNativeTarget "RAC-NetworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC60C6E01BC9178E00F26FAB /* Debug */,
+				CC60C6E11BC9178E00F26FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC60C6A11BC9178E00F26FAB /* Project object */;
+}
